@@ -230,6 +230,7 @@ margin-right: 10px;
     visibility: visible;
     opacity: 1;
     transition: opacity var(--typical-timing-duration) var(--typical-timing-function), visibility var(--typical-timing-duration) var(--typical-timing-function);
+    z-index: 2;
 }
 .backdrop.is-hidden{
     visibility: hidden;
@@ -251,6 +252,7 @@ background-color: #FFFFFF;
 padding: 40px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+
 transform: translate(-50%,-50%) scale(1) rotate(0);
 transition: transform var(--typical-timing-duration) var(--typical-timing-function);
 }
@@ -342,6 +344,8 @@ margin-bottom: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
+    display: block;
+    margin-bottom: 4px;
 }
 .modal-icon{
     position: absolute;
@@ -365,11 +369,21 @@ margin-bottom: 12px;
 .modal-text:hover, .modal-text:focus{
 border-color: var(--accent-color);
 }
-
+textarea::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    
+}
 .icon-check{
 width: 15px;
 height: 15px;
 fill: #FFFFFF;
+
 }
 
 .checkbox{
@@ -409,7 +423,19 @@ fill: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
 
+}
+
+.check-text{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575; 
 }
 .modal-link:visited{ 
     color:  var(--accent-color);
